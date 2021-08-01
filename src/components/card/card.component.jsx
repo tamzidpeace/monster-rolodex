@@ -1,9 +1,10 @@
 import React from 'react'
+import './car.style.css'
 
 export const Card = (props) => {
      return (
-          <div>
-               <h1 style={{ "background": "aqua" }}>{props.monster.name}</h1>
+          <div className="card-container">
+               <h1>{props.monster.name}</h1>
           </div>
      )
 }
