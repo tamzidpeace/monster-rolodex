@@ -29,8 +29,8 @@ class App extends Component {
     const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLocaleLowerCase()))
 
     return (
-      <div className="App">
-        <input type="search" placeholder="search monster" onChange={e => this.setState({ searchField: e.target.value })} />
+      <div className="App"> 
+        <input className="search" type="search" placeholder="search monster" onChange={e => this.setState({ searchField: e.target.value })} />
         <CardList monsters={filteredMonsters} />
       </div>
     );
